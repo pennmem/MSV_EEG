@@ -34,7 +34,7 @@ Outputs:
 
       \b: posterior estimates of persistence matrix,
 
-      \rho: average off-diagonal entries of Sigma,
+      \rho: posterior of diagonal entries of Sigma,
 
       \alpha: posterior estimates of intercept of volatility equation (in theta variable).
 
