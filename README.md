@@ -18,13 +18,13 @@ Inputs:
 
       y: J X T matrix of first differences of EEG signals at J channels over T periods (T is typically the length of the encoding period),
 
-      y_star: log(y^2 + 1.0e-5) mu0, C0: prior mean and covariance matrix for vector of log-vols at time 0, x_0,
+      y_star: log(y^2 + 1.0e-10)
+      
+      mu0, C0: prior mean and covariance matrix for vector of log-vols at time 0,
 
       n0, V0: Inverse-Wishart prior for Sigma,
 
       theta0, Sigma_theta: prior for the vector theta = (\alpha,\beta),
-
-      N: number of particles (choosen to balance trade-off between speed and accuracy, N = 5000 typically),
 
       m, v, p: mixtrure means, variances, and probability vectors when linearizing y (page 3 eqn 11 and 12 in the manuscript).
 
